@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>808</width>
+    <height>569</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	background-color: #fff;
+}
+
+QPushButton {
+	font-size: 18px;
+}
+
+QLabel {
+	font-size: 28px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>10</number>
+      </property>
+      <property name="bottomMargin">
+       <number>10</number>
+      </property>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="addCinema">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Добавить кинотеатр</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="closestSession">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>ближайший сеанс</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPushButton" name="addHall">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Добавить зал</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="hallPlan">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>план зала</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QPushButton" name="setChairs">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Задать конфигурацию кресел</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="seatsInRow">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>n свободных мест рядом</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QPushButton" name="createSession">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Создать сеанс</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="sessionsSchedule">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>расписания сеансов
+за прошедший месяц</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QPushButton" name="sellTicket">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Продать билет</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="cinemaGraph">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>график загруженности
+кинотеатра</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QPushButton" name="visitorsFeedback">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Отзывы посетителей</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="adBooklet">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>рекламный буклет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="resultLabel">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
